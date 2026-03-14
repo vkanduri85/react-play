@@ -1,0 +1,17 @@
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./index.css";
+import App from "./App.jsx";
+import Hero from "./Hero.jsx";
+//import Faq from "./Faq.jsx";
+
+import Footer from "../Footer.jsx";
+createRoot(document.getElementById("root")).render(
+	<StrictMode>
+		<App />
+		<Hero />
+		<main>
+			<Footer />
+		</main>
+	</StrictMode>,
+);
